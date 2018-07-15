@@ -47,6 +47,19 @@ In your `.jsdoc.json` file, add a template option.
 ```
 
 
+### Github-Corner
+
+Add a github-corner to the top-right of the site by setting in the jsdoc configuration:
+
+```json
+"templates": {
+    "github": {
+        "url": "https://github.com/nodecg/minami"
+    }
+}
+```
+
+
 ### Example JSDoc Config
 
 ```json
@@ -67,7 +80,10 @@ In your `.jsdoc.json` file, add a template option.
         "cleverLinks": false,
         "monospaceLinks": true,
         "useLongnameInNav": false,
-        "showInheritedInNav": true
+        "showInheritedInNav": true,
+        "github": {
+            "url": "https://github.com/nodecg/minami"
+        }
     },
     "opts": {
         "destination": "./docs/",
